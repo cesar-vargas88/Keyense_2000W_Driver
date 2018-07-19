@@ -52,49 +52,44 @@ namespace Keyense_2000W_Driver
                             if (!t.Wait(ts))
                             {
                                 tcpClient.SendMessage(Off);
-                                data = "NO_DATA";
+                                data = tcpClient.ReceiveMessage();
+
+                                if (!data.Contains("ERROR"))
+                                    data = "ERROR\r";
                             }
 
                             tcpClient.Disconnect();
                             working = false;
                             return data;
                         }
-                        catch(Exception ee)
+                        catch(Exception)
                         {
                             try
                             {
                                 tcpClient.Disconnect();
                                 working = false;
-                                return "EXEPTION_1";
+                                return "PROCESS_FAIL\r";
                             }
-                            catch(Exception eee)
+                            catch(Exception)
                             {
                                 working = false;
-                                return "EXEPTION_2";
+                                return "PROCESS_FAIL\r";
                             }
                         }
-                        
-                        /*tcpClient = new TCPClient(ip, port, TimeOut);
-                        Console.WriteLine(tcpClient.Connect());
-                        Thread.Sleep(5);
-                        tcpClient.SendMessage(On);
-                        data = tcpClient.ReceiveMessage();
-                        working = false;
-                        tcpClient.SendMessage(Off);
-                        tcpClient.Disconnect();*/
                     }
                     else
                     {
                         working = false;
-                        return "ERROR_CONECTION";
+                        return "NO_CONECTION\r";
                     } 
                 }
-                catch(Exception e)
+                catch(Exception)
                 {
-                    return "EXEPTION_0";
+                    working = false;
+                    return "PROCESS_FAIL\r";
                 }
             }
-            return "TASK_RUNNING";
+            return "TASK_RUNNING\r";
         }
     }
 }

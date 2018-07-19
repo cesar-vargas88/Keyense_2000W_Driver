@@ -15,8 +15,8 @@ namespace Keyense_2000W_Driver
 
             while(true)
             {
-                Console.WriteLine(Scanner.Trigger("LON\r", "LOFF\r", 1000) + "\n\n");
-                Thread.Sleep(5000);
+                Console.WriteLine(Scanner.Trigger("LON\r", "LOFF\r", 200) + "\n\n");
+                Thread.Sleep(2000);
             }
         }
     }
