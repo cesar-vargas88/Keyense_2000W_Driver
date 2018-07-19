@@ -1,0 +1,7 @@
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\bin\Debug\Keyense_2000W_Driver.exe.config
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\bin\Debug\Keyense_2000W_Driver.exe
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\bin\Debug\Keyense_2000W_Driver.pdb
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\obj\Debug\Keyense_2000W_Driver.csprojAssemblyReference.cache
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\obj\Debug\Keyense_2000W_Driver.csproj.CoreCompileInputs.cache
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\obj\Debug\Keyense_2000W_Driver.exe
+C:\Users\gdlcesva\source\repos\Visual Studio Team Services\Keyense_2000W_Driver\Keyense_2000W_Driver\obj\Debug\Keyense_2000W_Driver.pdb
